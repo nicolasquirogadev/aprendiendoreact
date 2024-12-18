@@ -1,19 +1,28 @@
 #home {
   height: 100dvh;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; 
+  margin: 0 auto;
 }
-
+.hero-left {
+  width: 45%;
+}
 .img-container {
-  width: 60%;
+  width: 55%;
+  overflow-x: hidden;
+  align-self:center
+  
 }
 .img-container>img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 98dvh;
+  
+}
+.logo-container {
+  height: fit-content;
 }
 .logo-container>img {
   width: 500px;
-  height: auto;
 }
 
 .home-left {
@@ -21,17 +30,18 @@
   flex-direction: row;
   align-items: center;
 }
-
+nav {
+  transform: translateY(-80px);
+}
 .nav-link {
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 600;
   color: var(--blue-dark);
-  transition: all .7s ease;
+  transition: .7s ease;
 }
 .nav-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 1.5rem;
   color: var(--blue-active);
+  font-size: 7.4rem;
 }
 
 #equipo {
@@ -42,6 +52,7 @@
 .section-title {
   font-size: 9rem;
   text-align: right;
+  margin: 0 0;
 }
 .equi-box {
   display: flex;
@@ -56,6 +67,7 @@
   width: 30dvw;
   text-align: center;
   text-justify: distribute-all-lines;
+  font-size: 1.8rem;
 }
 .eq-img-container>img{
   width: 120px;
@@ -69,5 +81,28 @@
 }
 .thr{
   transform: translateX(10px);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  padding: 4rem;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .7s ease;
+  i{
+    font-size: 130%
+  }
+}
+
+.footer-item:hover{
+  cursor: pointer;
+  font-size: 2rem;
 }
 

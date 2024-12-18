@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import './App.css'
+import './Talleres'
+import Talleres from './Talleres'
 
 function App() {
-  const [count, setCount] = useState(0)
   return (
     <>
     <section className="home" id='home'>
@@ -39,6 +39,12 @@ function App() {
     <section id="talleres">
     <h1 className="section-title">talleres</h1>
     
+    <Talleres 
+      title="Yoga y Arte" 
+      imgsrc={"./src/assets/yoga-arte.jpeg"}
+      ptext="Te invitamos a pasar una tarde  (blablablablablabla) a pintar a hacer yoga aca falta mas texto pero se explica un poco de que trata el taller." 
+      schedule="Día 05/12/2024 de 16:00 hasta 20:00" />
+    
     </section>
 
     <section id="contactanos">
@@ -48,14 +54,15 @@ function App() {
     <footer>
       <a className="footer-item">
       <i class="fa-brands fa-instagram"></i>
-      <p>@brunchasana</p>
+      @brunchasana
       </a>
       <a className="footer-item">
+      <i class="fa-regular fa-envelope"></i>
       brunchasana@gmail.com
       </a>
       <div className="footer-item">
-      
-      <p>011-4449-5049</p>
+      <i class="fa-solid fa-phone"></i>
+      011-4449-5049
       </div>
     </footer>
     </>
